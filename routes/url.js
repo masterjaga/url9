@@ -10,7 +10,7 @@ const Url = require("../models/Url");
 //@route    POST /api/url/shorten
 //@desc     Create short URL
 
-const baseUrl = `http://localhost:${process.env.PORT || 3000}`;
+const baseUrl = `http://localhost:${process.env.PORT || 1337}`;
 router.post("/shorten",
     async (req, res) => {
         const { longUrl } = req.body;
